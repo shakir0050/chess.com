@@ -14,7 +14,7 @@ let players = {}; // { white: socketId, black: socketId }
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/Chess.com", (req, res) => {
+app.get("/", (req, res) => {
     res.render("index.ejs", { title: "Chess Game!" });
 });
 
